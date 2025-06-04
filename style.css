@@ -1,0 +1,161 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body with vibrant gradient */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Header with translucent glass effect */
+header {
+  background: rgba(90, 70, 140, 0.85);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd6ff;
+  transform: scale(1.1);
+}
+
+/* Main layout */
+main {
+  flex: 1;
+  padding: 40px 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  animation: slideUp 1s ease-out;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 35px 30px;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: floatIn 1.2s ease-out;
+}
+
+/* Label styles */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: left;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+  background-color: #fff;
+}
+
+input:focus {
+  border-color: #ba68c8;
+  outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  background: linear-gradient(to right, #8e2de2, #ba68c8);
+  color: white;
+  padding: 14px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #9d50bb, #6e48aa);
+}
+
+/* Message styles */
+.message {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #d9534f;
+}
+
+.message.success {
+  color: #28a745;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes floatIn {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
