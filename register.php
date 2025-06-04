@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Register - CodeLearn</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <h2>Register</h2>
